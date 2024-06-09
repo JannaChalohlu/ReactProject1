@@ -1,0 +1,24 @@
+.contacts {
+    padding: 1rem;
+    background-image: url("../../images/other/glass.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position-x: 65%;
+    width: 80%;
+}
+
+.contacts-text{
+    margin-left: 15rem;
+  }
+
+  @media (max-width: 767px){
+    .contacts{
+        width: 100vw;
+        background-position-x: 100%;
+    }
+
+    .contacts-text{
+        margin-left: .1rem;
+    }
+
+  }

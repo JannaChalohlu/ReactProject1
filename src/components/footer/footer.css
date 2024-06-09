@@ -1,0 +1,50 @@
+.footer-main{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgb(68, 66, 66, 0.2);
+  }
+  
+  .footer{
+      display: flex;
+      width: 80%;
+      justify-content: space-between;
+     
+  }
+  
+  .footer a>img, .footer li>img{
+    width: 40px;
+    height: 35px;
+    box-shadow: 0px 0px 5px  rgb(88, 81, 81);
+  }
+  
+  .social-media, .payment-method, .shipping-method{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+  }
+  
+  .social-media ul, .payment-method ul, .shipping-method ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .footer h3{
+    margin: 1rem;
+    
+  }
+
+  @media (max-width: 767px){
+    .footer h3{
+      font-size: 1rem;
+    }
+
+    .footer a>img, .footer li>img{
+      width: 30px;
+      height: 25px;
+      box-shadow: 0px 0px 5px  rgb(88, 81, 81);
+    }
+  }

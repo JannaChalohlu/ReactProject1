@@ -1,0 +1,37 @@
+.signUp {
+    width: 55vw;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sign input,
+  button{
+    padding: 0.5rem;
+    width: 250px;
+    height: 35px;
+    margin: 0.5rem;
+    outline: none;
+    border: 1px solid rgb(86, 17, 17);
+    font-family: Pacifico;
+  }
+  
+  .sign input:focus {
+    border: 3px solid rgb(86, 17, 17);
+  }
+  
+  .sign button {
+    color: white;
+    background-color: rgb(86, 17, 17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

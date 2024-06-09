@@ -1,0 +1,41 @@
+/* home? */
+.cart-value{
+    display: flex;
+   
+  }
+  
+  /* home */
+  
+  .home{
+      margin-top: 2rem;
+      width: 30vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .home p{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .home img{
+      width: 90%;
+      box-shadow: 0 0 10px rgb(95, 101, 95);
+      border-radius: 5px;
+  }
+
+  @media (max-width: 767px){
+    
+    .home p{
+      width: 90wv;
+      font-size: 1.2rem;
+    }
+
+    .home{
+      width: 90%;
+    }
+  }
+  
