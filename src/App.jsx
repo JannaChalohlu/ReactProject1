@@ -1,4 +1,4 @@
-import { NavLink, Route, Routes } from "react-router-dom";
+import { NavLink, Route, Routes, Navigate } from "react-router-dom";
 import Contacts from "./components/contacts/Contacts"
 import Home from "./components/home/Home";
 import Parent from "./components/parent/Parent"
@@ -24,15 +24,16 @@ function App() {
     </header>
       <ContextProvider>
         <Routes>
-          <Route path="/" element={<Parent />}>
-            <Route index element={<Home />}></Route>
-            <Route path="/red" element={<Red />}></Route>
-            <Route path="/white" element={<White />}></Route>
-            <Route path="/rose" element={<Rose />}></Route>
-            <Route path="/contacts" element={<Contacts />}></Route>
-            <Route path="/cart" element={<Cart />}></Route>
-            <Route path="/signUp" element={<SignUp />}></Route>
-            <Route path="/profile" element={<Profile/>}></Route>
+            <Route path="/" element={<Parent />}>
+            <Route index element={<Home />}/>
+            <Route path="/red" element={<Red />}/>
+            <Route path="/white" element={<White />}/>
+            <Route path="/rose" element={<Rose />}/>
+            <Route path="/contacts" element={<Contacts />}/>
+            <Route path="/cart" element={<Cart />}/>
+            <Route path="/signUp" element={<SignUp />}/>
+            <Route path="/profile" element={<Profile/>}/>
+            <Route path="*" element={<Navigate to="/"/>}/>
           </Route>
         </Routes>
       </ContextProvider>
