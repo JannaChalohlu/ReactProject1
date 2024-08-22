@@ -9,9 +9,9 @@ function Red() {
     <div className="wine-container">
       {state.redWine.map((obj) => {
         return (
-          <div key={obj.id} className="div-img">
+          <div  key={obj.id} className="div-img">
             <img src={obj.src} alt="wine's img" />
-            <button onClick={() => dispatch({ type: "add", payload: obj })}>
+            <button className="addBtn" onClick={() => dispatch({ type: "add", payload: obj })}>
               Add
             </button>
           </div>

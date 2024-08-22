@@ -1,7 +1,10 @@
+
+
 .signUp {
     width: 55vw;
     margin: 5rem auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -12,21 +15,43 @@
     justify-content: center;
     align-items: center;
   }
+
+  .sign .firstName, .lastName, .email, .password, .confirmPassword{
+    width: 270px;
+    height: 40px;
+    margin: 0.5rem;
+    outline: none;
+    border: 1px solid rgb(86, 17, 17);
+    font-family: Pacifico;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
   
-  .sign input,
-  button{
+  .sign button{
     padding: 0.5rem;
-    width: 250px;
+    width: 270px;
     height: 35px;
     margin: 0.5rem;
     outline: none;
     border: 1px solid rgb(86, 17, 17);
     font-family: Pacifico;
+
+  }
+
+  .sign input{
+    border: none;
+    position: relative;
+    left: 10px;
+    padding: 5px;
+    font-family: Pacifico;
+    font-size: 15px;
+    opacity: 0.9;
+    outline: none;
   }
   
-  .sign input:focus {
-    border: 3px solid rgb(86, 17, 17);
-  }
+ 
+  
   
   .sign button {
     color: white;
@@ -34,4 +59,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 15px;
   }
+
+  .togglePassword{
+    position: absolute;
+    right: 10px;
+  }
+
+  
