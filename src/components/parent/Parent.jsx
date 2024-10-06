@@ -46,7 +46,7 @@ function Parent() {
               </NavLink>
         </li>
         <li>
-          {state.isSignUp ? <NavLink to="/profile" element={<Profile/>}>Profile</NavLink> : <NavLink to="/signUp">Sign Up</NavLink>}
+          {state.isSignUp ? <NavLink to="/profile" element={<Profile/>}>Profile</NavLink> : <NavLink to="/signUp">Sign Up </NavLink>}
             
         </li>
       </ul>
@@ -78,7 +78,7 @@ function Parent() {
               </NavLink>
         </li>
         <li>
-          {state.isSignUp ? <NavLink to="/profile" element={<Profile/>}>Profile</NavLink> : <NavLink to="/signUp">Sign Up</NavLink>}
+          {state.isSignUp ? <NavLink to="/profile" element={<Profile/>}>Profile</NavLink> : <NavLink to="/signUp">Sign Up </NavLink>}
             
         </li>
       </ul>}

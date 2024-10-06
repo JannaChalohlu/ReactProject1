@@ -21,34 +21,51 @@ function Footer() {
             <a href="http://facebook.com" target="_blank">
               <img src={facebookImg} alt="facebook" />
             </a>
+            <p>Facebook</p>
           </li>
           <li>
             <a href="http://instagram.com" target="_blank">
               <img src={instagramImg} />
             </a>
+            <p>Instagram</p>
           </li>
           <li>
             <a href="http://youtube.com" target="_blank">
               <img src={youtubeImg} />
             </a>
+            <p>YouTube</p>
           </li>
         </ul>
       </div>
       <div className="payment-method">
         <h3>Payment Methods</h3>
         <ul>
-          <li><img src={giropay} alt="giropay img" /></li>
-          <li><img src={mastercard} alt="mastercard img" /></li>
-          <li><img src={paypal} alt="paypal img" /></li>
-          <li><img src={visa} alt="visa img" /></li>
+          <li><img src={giropay} alt="giropay img" />
+          <p>Giropay</p>
+          </li>
+          <li><img src={mastercard} alt="mastercard img" />
+          <p>MasterCard</p>
+          </li>
+          <li><img src={paypal} alt="paypal img" />
+          <p>PayPal</p>
+          </li>
+          <li><img src={visa} alt="visa img" />
+          <p>VISA</p>
+          </li>
         </ul>
       </div>
       <div className="shipping-method">
         <h3>Shipping Methods</h3>
         <ul>
-          <li><img src={dhl} alt="dhl img" /></li>
-          <li><img src={dpd} alt="dpd img" /></li>
-          <li><img src={packstation} alt="packstation img" /></li>
+          <li><img src={dhl} alt="dhl img" />
+          <p>DHL</p>
+          </li>
+          <li><img src={dpd} alt="dpd img" />
+          <p>DPD</p>
+          </li>
+          <li><img src={packstation} alt="packstation img" />
+          <p>PackStation</p>
+          </li>
         </ul>
       </div>
     </div>

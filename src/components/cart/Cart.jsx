@@ -34,7 +34,11 @@ function Cart() {
           ))
         ) : (
           <div className="empty-cart">
+           
             <p>Your cart still empty. Why?</p>
+            <p style={{fontSize: "12px", opacity: "0.7"}}>Do not forget to sign up to see your Cart</p>
+
+            
             <img src={Stepan} className="empty-cart-img"/>
             <div className="stepan">
              

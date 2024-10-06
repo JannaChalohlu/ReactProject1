@@ -10,18 +10,22 @@ import Parent from "./components/parent/Parent"
  import ContextProvider from "./contexts/Context";
  import Footer from "./components/footer/Footer";
  import Profile from "./components/profile/Profile";
+ import HeaderSlider from './components/headerSlider/HeaderSlider'
 
 
 function App() {
   return (
     <>
-    <header className="header">
+    <div className="headerContainer">
 
-      <div className="header-bg"></div>
+    <header className="header">
+      <HeaderSlider />
+
       <h1>
         <NavLink to="/">Lowe wine</NavLink>
       </h1>
     </header>
+    </div>
       <ContextProvider>
         <Routes>
             <Route path="/" element={<Parent />}>

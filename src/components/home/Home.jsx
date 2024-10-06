@@ -1,7 +1,8 @@
-import wines from "../../images/other/wines.jpeg"
+//import wines from "../../images/other/wines.jpeg"
 import { useContext } from "react"
 import { ContextWine } from "../../contexts/Context"
 import { IoCartOutline } from "react-icons/io5";
+import BestSellerSlider from '../bestsellerSlider/BestsellerSlider'
 import "./home.css"
 
 function Home() {
@@ -17,7 +18,16 @@ function Home() {
 }, 0)}
   </div></div>}
   </div>}
-      <img src={wines} alt="" />
+      {/* <img src={wines} alt="" /> */}
+      <div className="bestsellers">
+          <div>
+            <p>Do not forget to try <br/> our bestsellers</p>
+          </div>
+          <div className="bestsellerContainer">
+            <BestSellerSlider/>
+
+          </div>
+      </div>
     </div>
     
   )

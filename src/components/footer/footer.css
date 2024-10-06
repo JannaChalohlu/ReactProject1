@@ -1,50 +1,78 @@
 .footer-main{
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgb(68, 66, 66, 0.2);
+}
+
+.footer{
     display: flex;
-    justify-content: center;
-    border-top: 1px solid rgb(68, 66, 66, 0.2);
+    width: 100%;
+    justify-content: space-between;
+    background-color: rgb(211, 214, 211);
+
+}
+
+.footer a>img, .footer li>img{
+  width: 40px;
+  height: 35px;
+  box-shadow: 0px 0px 5px  rgb(88, 81, 81);
+  filter: grayscale(100%); 
+  transition: filter 0.5s, transform 0.5s ease; 
+  transform: scale(1);
+}
+
+.footer a>img:hover, .footer li>img:hover{
+  filter: grayscale(0%); 
+  transform: scale(1.1);
+}
+
+.social-media, .payment-method, .shipping-method{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+.social-media ul li{
+  display: flex;
+  gap: 1rem;
+}
+
+.payment-method ul li,
+.shipping-method ul li{
+  display: flex;
+  gap: 1rem;
+  margin: 0.4rem;
+}
+
+.social-media ul, .payment-method ul, .shipping-method ul{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-items: start;
+  list-style: none;
+}
+
+.footer h3{
+  margin: 1rem;
+  transition: transform 0.5s ease; 
+  transform: scale(1)
+}
+
+.footer h3:hover{
+transform: scale(1.1)
+}
+
+
+
+@media (max-width: 767px){
+  .footer h3{
+    font-size: 1rem;
   }
-  
-  .footer{
-      display: flex;
-      width: 80%;
-      justify-content: space-between;
-     
-  }
-  
+
   .footer a>img, .footer li>img{
-    width: 40px;
-    height: 35px;
+    width: 30px;
+    height: 25px;
     box-shadow: 0px 0px 5px  rgb(88, 81, 81);
   }
-  
-  .social-media, .payment-method, .shipping-method{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30%;
-  }
-  
-  .social-media ul, .payment-method ul, .shipping-method ul{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    list-style: none;
-  }
-  
-  .footer h3{
-    margin: 1rem;
-    
-  }
-
-  @media (max-width: 767px){
-    .footer h3{
-      font-size: 1rem;
-    }
-
-    .footer a>img, .footer li>img{
-      width: 30px;
-      height: 25px;
-      box-shadow: 0px 0px 5px  rgb(88, 81, 81);
-    }
-  }
+}
