@@ -12,7 +12,7 @@ function Home() {
     <div className="home">
        {state.isSignUp && <div>Hello, {user.firstName}! {state.cart.length>0 ? <div>You have {state.cart.reduce((acc, wine) => {
   return acc + wine.orQu;
-}, 0)} items in your cart </div> : <div>Your cart is empty<div>
+}, 0)} items in your cart </div> : <div className="empty">Your cart is empty<div>
   <IoCartOutline /> {state.cart.reduce((acc, wine) => {
   return acc + wine.orQu;
 }, 0)}

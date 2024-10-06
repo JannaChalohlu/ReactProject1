@@ -21,6 +21,11 @@
   font-size: 1.5rem;
 }
 
+.home .empty{
+  display: flex;
+  gap: 1rem;
+}
+
 
 .bestsellers{
   width: 100%;
